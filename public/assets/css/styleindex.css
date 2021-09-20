@@ -1,0 +1,43 @@
+body {
+    background-image: url('fundoapi.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top:300px;
+    margin-bottom:300px;
+  }
+
+  form {
+    display: block;
+    margin:0 auto;
+    text-align: center;
+    position: fixed;
+    margin-left: 390px;
+
+
+  }
+
+  button {
+    position: relative;
+    background-color: #4c5eaf;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+      }
+
+  input {
+    display: block;
+    margin:0 auto;
+    text-align: center;
+  }
