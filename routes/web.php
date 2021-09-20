@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\IndexController@indexcontroller');
 Route::get('/search', 'App\Http\Controllers\SearchController@searchmovie');
-Route::get('/genres', 'App\Http\Controllers\GenderController@searchByGenres');
+Route::get('/genres/{id}', 'App\Http\Controllers\GenderController@searchByGenres');
+
 
 Route::get('/trendingmovies', 'App\Http\Controllers\TmdbController@index');
 
