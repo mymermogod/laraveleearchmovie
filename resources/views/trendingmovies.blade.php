@@ -19,7 +19,7 @@
     <div id="tags">
         @foreach ($showgenres as $genre)
 
-        <div class=tag onclick="add({{$genre['id']}});" name="genretag" value={{$genre['id']}}>
+        <div class=tag onclick="window.location='/genres/{{$genre['id']}}'" name="genretag">
             {{$genre['name']}}
         </div>
 
@@ -45,7 +45,7 @@
     <main id="main">
 
     @foreach ($movies as $movie)
-    <div class="movie">
+    <div class="movie" onclick="window.location='/genres/{{movie['id']}}'" >
         <img src ="https://image.tmdb.org/t/p/w500{{$movie['poster_path']}}">
         <div class="movie-info">
             <h3>{{$movie['title']}}</h3>
